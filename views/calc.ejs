@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator!</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+	<h2>Python Calculator</h2>
+	<p><a href='/challenges'>Return to challenges</a>
+	<p>Type something in and it will evaluate it like a calculator!</p>
+	<form action="/c/calc" method="post">
+		<input name="input" autocomplete="off">
+		<input type="submit">
+	</form>
+	<% if (typeof res != "undefined") { %>
+		Result: <br>
+		<%=res%>
+	<% } %>
+</body>
+
+</html>

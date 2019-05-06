@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Leaderboards</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<%- include('header', {user: user}); %>
+	<div id="contents">
+		<div id="chals_top">
+			<h2 id="chals_title" style="margin-bottom: 0px">Leaderboard</h2><h2 id="user_score" style="margin-bottom: 0px"><%= user ? 'Your Score:' +  user.score : '' %></h2>
+		</div>
+		<% if (users.length == 0) { -%>
+			No one is here :'(
+		<% } else { -%>
+			<ol id="leaderboard">
+				<% users = users.sort((a, b) => b.score - a.score);
+					for (let u of users) { %>
+						<a href="profile?u=<%= u.username %>"><li>
+							<% if (user && u.username == user.username) { %>
+								<b>
+							<% } %>
+							<%= u.username %> - <%= u.score %>
+							<% if (user && u.username == user.username) { %>
+								</b>
+							<% } %>
+						</li></a>
+				<% } %>
+			</ol>
+		<% } -%>
+	</div>
+</body>
+ 
+</html>

@@ -1,0 +1,198 @@
+<html>
+
+<head>
+	<title>TestCTF</title>
+	<style>
+	body {
+		font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	#chals {
+		width:60%;
+		margin-left: 20%;
+		left:0;
+		background-color: rgb(150,200,255);
+		border-radius: 50px;
+		padding: 25px;
+		padding-bottom: 5px;
+	}
+	.chal {
+		background-color: #EEE;
+		padding: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		transition: all .4s;
+		margin-bottom: 25px;
+		opacity: .9;
+	}
+	.chal:hover {
+		background-color: #FAFAFF;
+		border-radius: 25px;
+		opacity: 1;
+	}
+	input[type="submit"]{
+		cursor: pointer;
+	}
+	#troll {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome to TestCTF</h1>
+	<div id="chals">
+		<h2>Challenges:</h2>
+		<div class="chal">
+			<h4>Test - Miscellaneous</h4>
+			<p>Try inputting this flag: <code>flag{TestCTF_is_so_cool}</code></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="-1">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Inspection - Web</h4>
+			<p>There is a flag hidden in the code for this webpage! Can you find it?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="0">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Deeper Inspection - Web</h4>
+			<p>There is a flag hidden on <a href="http://shell2017.picoctf.com:4079/">this website</a> too, but it has three parts! Can you find it?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="1">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>SQL Injection 1 - Web</h4>
+			<p>Do you know what an SQL Injection is? <a href="http://shell2017.picoctf.com:52085/">???</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="3">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Client Side - Web</h4>
+			<p>I can't seem to authenticate on this site. Can you help me? <a href="http://shell2017.picoctf.com:4370/">Here</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="4">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Cipher 1 - Cryptography</h4>
+			<p>My old friend Caesar gave me this one. Can you crack it?<br><br><code>pvkq{mkockb_gkc_cy_myyv}</code></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="13">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Data is cool - Forensics</h4>
+			<p>There is a flag hidden in this file! Can you find it? <a href="/asdf.jpg">asdf.jpg</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="2">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Somewhere in the Server - Web</h4>
+			<p>There is a flag hidden in flag.txt on the server! Can you find it?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="10">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>ask ee - Cryptography</h4>
+			<p>In the computing industry, standards are established to facilitate information interchanges among American coders. Unfortunately, I've made communication a little bit more difficult. Can you figure this one out? <br><br> <code>66 6C 61 67 7B 34 35 43 31 31 5F 31 35 5F 55 35 33 46 55 4C 7D</code></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="11">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>What the File 1 - Forensics</h4>
+			<p>A mystery person gave me this file. I don't know what it is but he said there's a flag inside. Can you help me get it?<br>Here's the file: <a href="/flag.zip">flag.zip</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="17">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>64 - Cryptography</h4>
+			<p>I encoded my flag with a certain base. Help me get it back. <br><br> <code>ZmxhZ3tiQTUzX3MxeDd5X0YwdVJ9</code></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="9">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Troll - Web</h4>
+			<p>Here's a free flag.<br><br> <div id="troll"><code>flag{s0ca83am8e0_f2iodjf2o3jal;ad32r#$ajkdf$ajafkl2fakjdl$adfaDa13adf4FAF3rja2#Radfdf2}</code></div></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="19">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>exif - Forensics</h4>
+			<p>If only the flag were in the image... <a href="/exif.jpg">exif.jpg</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="12">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Cipher 2 - Cryptography</h4>
+			<p>Caesar gave me another cipher, but this time it's one that his friend Susbtitution made. Can you crack this one?
+			<br><br><code>VQPC{G_QJDB_PKBRGXP}</code><br><br>
+			<a href="enc.rtf">Here's</a> some text that is ciphered using the same key.</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="14">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>POSTing - Web</h4>
+			<p>Something's wrong with <a href="https://ctflearn.com/post.php">this site</a>. HALP</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="5">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Taste the Rainbow Table - Cryptography</h4>
+			<p>Here's a hash. <code>c055588e18df56f877f3c3ca73790ecd</code> What is the original text?<br>Hint: Perhaps a table of rainbows would help</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="15">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>What the File 2 - Forensics</h4>
+			<p>The mystery person gave me another file. I don't know what it is but he said there's a flag inside. Can you help me get it?<br>Here's the file: <a href="/a.wim">a.wim</a></p><p>Hint: You shouldn't need to change any extensions for this one!</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="16">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Inspection 2.0 - Web/Forensics</h4>
+			<p>There's actually another flag hidden on this website! (not on this webpage tho). I think this one is pretty troll.</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="21">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>RSA - Cryptography</h4>
+			<p>What is RSA? Austin has these giant numbers. The flag is supposedly encrypted in here. Can you help me get it?
+			<a href="rsa.txt">rsa.txt</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="18">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>chrislang - Programming/Recon</h4>
+			<p>I made this esolang called chrislang, and this program prints out the flag. I might have put an implementation on GitHub somewhere...
+			<a href="flag.chris">flag.chris</a></p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="20">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>go aHeader - Web</h4>
+			<p>Help me get into <a href="https://ctflearn.com/header.php">this site</a>. It seems that you need certain things to get in. <br> Hint: What are HTTP Headers?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="6">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Digital Camouflage - Forensics</h4>
+			<p>We need to gain access to some routers. Let's try and see if we can find the password in the captured network data: <a href="/data.pcap">data.pcap</a>.<br>Hint: What's a .pcap?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="8">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+		<div class="chal">
+			<h4>Tasty Cookies - Web</h4>
+			<p>Help me get into <a href="http://shell2017.picoctf.com:30027/">this site</a> my friend made. He said cookies are tasty and comments might help. <br> Hint: What are cookies, and what's in the comments?</p>
+			<form method='POST' action='/'><input name='flag' autocomplete="off"><input type="hidden" name="problem" value="7">&nbsp;<input type="submit"></form>
+			</p>
+		</div>
+	</div>
+	<span><!-- Flag for Inspection (second challenge): flag{n1Ce_1nSpeCt_El3MenT} --></span>
+	<script src="troll.js"></script>
+</body>
+
+</html>

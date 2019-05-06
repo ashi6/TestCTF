@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Challenges</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<%- include('header', {user: user}); %>
+	<br>
+	<div id="chals">
+		<div id="chals_top">
+			<h2 id="chals_title">Challenges</h2><h2 id="user_score">Your Score: <%=user.score%></h2>
+		</div>
+		<% for (let i = 0; i < challenges.length; i++) {
+			let chal = challenges[i];
+			let solved = user.solved.indexOf(i) != -1; %>
+			<div class="chal <% if (solved) { %>solved<% } %>"><h4><%= chal.name %> - <%= chal.points%> (<%= chal.categories.join('/') %>)</h4>
+			<p><%- chal.description %></p>
+			<form method='POST' action='/challenges'><input name='flag' autocomplete="off" <% if (solved) { %>disabled="true"<% } %>"><input type="hidden" name="problem" value="<%= i %>">&nbsp;<input type="submit" <% if (solved) { %>disabled="true" value="Solved"<% } %>"></form>
+			</p></div>
+		<% } %>
+	</div>
+	<span><!-- Flag for Inspection (second challenge): flag{n1Ce_1nSpeCt_El3MenT} --></span>
+	<script src="troll.js"></script>
+</body>
+
+</html>

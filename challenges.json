@@ -1,0 +1,177 @@
+[
+	{
+		"name": "Test",
+		"categories": ["Miscellaneous"],
+		"description": "Try inputting this flag: <code>flag{TestCTF_is_so_cool}</code>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 10
+	},
+	{
+		"name": "Inspection",
+		"categories": ["Web"],
+		"description": "There is a flag hidden in the code for this webpage! Can you find it?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 20
+	},
+	{
+		"name": "SQL Injection 1",
+		"categories": ["Web"],
+		"description": "Do you know what an SQL Injection is? <a href='http://ctf.yoip.io:3334/'>???</a>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 30
+	},
+	{
+		"name": "Cipher 1",
+		"categories": ["Cryptography"],
+		"description": "My old friend Caesar gave me this one. Can you crack it?<br><br><code>pvkq{mkockb_gkc_cy_myyv}</code>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 30
+	},
+	{
+		"name": "Somewhere in the Server",
+		"categories": ["Web"],
+		"description": "There is a flag hidden in flag.txt on the server! Can you find it?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 30
+	},
+	{
+		"name": "ask ee",
+		"categories": ["Cryptography"],
+		"description": "In the computing industry, standards are established to facilitate information interchanges among American coders. Unfortunately, I've made communication a little bit more difficult. Can you figure this one out? <br><br> <code>66 6C 61 67 7B 34 35 43 31 31 5F 31 35 5F 55 35 33 46 55 4C 7D</code>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 30
+	},
+	{
+		"name": "64",
+		"categories": ["Cryptography"],
+		"description": "I accidentally encoded my flag in a certain base. Help me get it back. <br><br> <code>ZmxhZ3tiQTUzX3MxeDd5X0YwdVJ9</code>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 40
+	},
+	{
+		"name": "Cipher 2",
+		"categories": ["Cryptography"],
+		"description": "Caesar gave me another cipher, but this time it's one that his friend Susbtitution made. Can you crack this one? <br><br><code>VQPC{G_QJDB_PKBRGXP}</code><br><br><a href='enc.rtf'>Here's</a> some text that is ciphered using the same key. Also, the flag is all caps.",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 40
+	},
+	{
+		"name": "Data is cool",
+		"categories": ["Forensics"],
+		"description": "There is a flag hidden in this file! Can you find it? <a href='/asdf.jpg'>asdf.jpg</a>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 40
+	},
+	{
+		"name": "Troll",
+		"categories": ["Web"],
+		"description": "Here's a free flag.<br> <div id='troll'><code>flag{s0ca83am8e0_f2iodjf2o3jal;ad32r#$ajkdf$ajafkl2fakjdl$adfaDa13adf4FAF3rja2#Radfdf2}</code></div>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 50
+	},
+	{
+		"name": "What the File 1",
+		"categories": ["Forensics"],
+		"description": "A mystery person gave me this file. I don't know what it is but he said there's a flag inside. Can you help me get it?<br>Here's the file: <a href='/flag.zip'>flag.zip</a><br>Hint: Check for a file signature.",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 50
+	},
+	{
+		"name": "Client Side",
+		"categories": ["Web"],
+		"description": "I can't seem to authenticate on <a href='c/client'>this site</a>. Can you help me?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 50
+	},
+	{
+		"name": "Taste the Rainbow Table",
+		"categories": ["Cryptography"],
+		"description": "Here's a hash: <code>c055588e18df56f877f3c3ca73790ecd</code> What is the original text?<br>Hint: Perhaps a <i>table</i> of <i>rainbows</i> would help.",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 50
+	},
+	{
+		"name": "exif",
+		"categories": ["Forensics"],
+		"description": "If only the flag were in the image... <a href='/exif.jpg'>exif.jpg</a>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 50
+	},
+	{
+		"name": "POSTing",
+		"categories": ["Web"],
+		"description": "Something's wrong with <a href='c/posting'>this site</a>. HALP",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 60
+	},
+	{
+		"name": "Tweeter",
+		"categories": ["Recon"],
+		"description": "I recently tweeted a flag. My username is AYoip1115. Can you find the flag?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 60
+	},
+	{
+		"name": "Tasty Cookies",
+		"categories": ["Web"],
+		"description": "Help me get into <a href='http://ctf.yoip.io:3334/cookies.php'>my friend's website</a>. He said cookies are tasty and comments might help. <br> Hint: What are cookies, and what's in the comments?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 70
+	},
+	{
+		"name": "What the File 2",
+		"categories": ["Forensics"],
+		"description": "The mystery person gave me another file. I don't know what it is but he said there's a flag inside. Can you help me get it?<br>Here's the file: <a href='/a.wim'>a.wim</a></p><p>Hint: You shouldn't need to change any extensions for this one!",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 70
+	},
+	{
+		"name": "Inspection 2.0",
+		"categories": ["Web", "Forensics"],
+		"description": "There's actually another flag hidden on this website! (perhaps in a script). I think this one is pretty troll.",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 70
+	},
+	{
+		"name": "Digital Camouflage",
+		"categories": ["Forensics"],
+		"description": "We need to gain access to some routers. Let's try and see if we can find the password in the captured network data: <a href='/data.pcap'>data.pcap</a>.<br>Hint: The flag is the router password. It doesn't have flag{} around it.",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 80
+	},
+	{
+		"name": "go aHeader",
+		"categories": ["Web"],
+		"description": "Help me get into <a href='c/header'>this site</a>. It seems that you need certain things to get in. <br> Hint: What are HTTP Headers?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 80
+	},
+	{
+		"name": "Port Scanning",
+		"categories": ["Web"],
+		"description": "I'm running a lot of services on this server, but the one with the flag for this challenge is serving a minecraft resource pack. Can you find it?",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 90
+	},
+	{
+		"name": "RSA",
+		"categories": ["Cryptography"],
+		"description": "What is RSA? Austin has these giant numbers. The flag is supposedly encrypted in here. Can you help me get it? <a href='rsa.txt'>rsa.txt</a>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 90
+	},
+	{
+		"name": "chrislang",
+		"categories": ["Programming", "Recon"],
+		"description": "I made this esolang called chrislang, and <a href='flag.chris'>this program</a> prints out the flag. I might have put an implementation on GitHub somewhere...",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 100
+	},
+	{
+		"name": "Python Calculator",
+		"categories": ["Programming"],
+		"description": "<a href='c/calc'>Here's</a> a simple calculator in Python. It runs in the /calc directory, which also contains a flag.txt. Can you find the flag? <br> Here's the source if you want to take a look: <a href='calc.py'>calc.py</a>",
+		"flag": "xxxxxxxxxxxxxxxxx",
+		"points": 100
+	}
+]

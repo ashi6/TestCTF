@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title><% if (u) { %><%= u.username %>'s Profile<% } else { %>Not Found<% } %></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<%- include('header', {user: user}); %>
+	<div id="contents">
+		<% if (u) { %>
+			<h3><%= u.username %>'s Profile</h3>
+			Solved Problems:
+			<% if (solved.length == 0) { %>
+				Nothing yet! <br>
+			<% } else { %><ul>
+				<% for (let i of solved) { %>
+					<li><%= i.name %> - <%= i.points %>pts</li>
+				<% } %></ul>
+			<% } %>
+			Total Score: <%= u.score %> <br>
+		<% } else { %>
+			User not found!
+		<% } %>
+	</div>
+</body>
+
+</html>
+
+
+
+		

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TestCTF</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<%- include('header', {user: user}); %>
+	<div id="contents">
+		<p><h3>Welcome to TestCTF!</h3>TestCTF is a jeopardy-style capture-the-flag competition geared toward beginnners. This instance is only a demonstration, but feel free to try it out!<br></p>
+		<% if (user) { %>
+			You can view challenges, check the leaderboards, and view your profile using the links above!
+		<% } else { %>
+			You must be logged in to participate, but you can still <a href='leaderboard'>view the leaderboards</a>.
+		<% } %>
+	</div>
+</body>
+
+</html>
