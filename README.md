@@ -4,8 +4,8 @@ CS460 Security Lab Final Project
 The flags are redacted from challenges.json, so if you want to run this yourself you need to put them back in.
 
 To run the main server:
-npm install
-node app.js
+```npm install
+node app.js```
 
 This runs on port 3333 by default.
 
